@@ -1,2 +1,2 @@
 # nodebb-plugin-chat-perms
-Control chat in nodebb forum
+Provides tighter control over chats in Nodebb

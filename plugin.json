@@ -1,0 +1,12 @@
+{
+    "id": "nodebb-plugin-chat-perms",
+    "library": "./lib.js",
+    "hooks": [
+        { "hook": "filter:messaging.canGetMessages", "method": "canGetMessages" },
+        { "hook": "filter:messaging.canGetRecentChats", "method": "canGetMessages" },
+        { "hook": "filter:messaging.canReply", "method": "canReply" },
+        { "hook": "static:messaging.canMessageUser", "method": "canMessageUser" },
+        { "hook": "static:messaging.canMessageRoom", "method": "canMessageRoom" },
+        { "hook": "filter:messaging.isUserInRoom", "method": "isUserInRoom" }
+    ]
+}

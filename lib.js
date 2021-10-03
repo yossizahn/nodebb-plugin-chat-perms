@@ -31,7 +31,7 @@ module.exports = {
     if (data.callerUid !== data.uid && !ADMIN_UIDS.includes(data.callerUid)) throw new Error('אין גישה!');
     return data;
   },
-  async canReply (data) { return data; },
+  canReply = async data => data,
   async canMessageUser (data) {
     const userData = await User.getUserData(data.uid);
     const userGroups = await Groups.getUserGroupsFromSet('groups:createtime', [data.uid]);
@@ -51,7 +51,7 @@ module.exports = {
   },
   async canMessageRoom () {},
   async isUserInRoom (data) {
-    if (ADMIN_UIDS.includes(data.uid)) { data.inRoom = true; }
+    data.inRoom = ADMIN_UIDS.includes(data.uid);
     return data;
   }
 };

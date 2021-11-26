@@ -4,9 +4,9 @@ const moment = require('moment');
 
 let pluginSettings;
 try {
-    pluginSettings = JSON.parse(process.env.CHAT_PERMS_PLUGIN_SETTINGS);
+  pluginSettings = JSON.parse(process.env.CHAT_PERMS_PLUGIN_SETTINGS);
 } catch {
-    pluginSettings = {};
+  pluginSettings = {};
 }
 
 const ADMIN_UIDS = pluginSettings.ADMIN_UIDS || [1, 4]; // ניתן להגדיר כאן את מזהה המשתמש שיוכל לצפות בצ'אטים של אחרים

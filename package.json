@@ -1,13 +1,20 @@
 {
   "name": "nodebb-plugin-chat-perms",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "lib.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yossizahn/nodebb-plugin-chat-perms"
+  },
+  "author": "Yossi Zahn <yossizahn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yossizahn/nodebb-plugin-chat-perms/issues"
+  },
   "dependencies": {
     "moment": "^2.29.1"
   }
